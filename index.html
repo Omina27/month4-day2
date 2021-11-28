@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Top popular films</title>
+</head>
+<body>
+    
+    <div class="container-xl">
+        <h1 class="heading h1 text-center my-5 fw-bolder">Movies catalog</h1>
+        <div class="wrapper d-flex">
+
+            <!--LEFT SECTION-->
+            <div class="left col-4 mx-5">
+                <form action="http://echo.htmlacademy.ru" method="POST" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label class="visually-hidden" for="exampleDataList">Film names</label>
+                        <input class="form-control" type="text" list="datalistOptions"
+                        id="exampleDataList" placeholder="ave">
+                        <datalist id="datalistOptions">
+                            <option value="Harry Potter">
+                            <option value="Justice">
+                            <option value="Avatar">
+                        </datalist>
+                    </div>
+                    <div class="mb-3">
+                        <label class="visually-hidden" for="rate">Rating number</label>
+                        <input class="form-control" type="number" name="number" placeholder="5"    id="rate-number" min="5" max="100">
+                    </div>
+                                
+                    <div class="mb-3">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected disabled>All</option>
+                            <option value="1">Indonesian National Revolution (1945–1949)</option>
+                            <option value="2">Cold War (1945–1991)</option>
+                            <option value="3">Greek Civil War (1946–1949)</option>
+                            <option value="4">Hukbalahap Insurgency (1946–1954)</option>
+                            <option value="5">Avengers: Infinity War (2018)        
+                            <option value="6">The Lion King (2019)</option>
+                            <option value="7">Jurassic World (2015)</option>
+                        </select>
+                    </div>
+                                    
+                    <div class="mb-3">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected disabled>Rating (high to low)</option>
+                            <option value="1"> The Shawshank Redemption (1994) 	9.2</option>
+                            <option value="2">Cold War (1945–1991)</option>
+                            <option value="3">Greek Civil War (1946–1949)</option>
+                            <option value="4">Hukbalahap Insurgency (1946–1954)</option>
+                            <option value="5">Avengers: Infinity War (2018)        
+                            <option value="6">The Lion King (2019)</option>
+                            <option value="7">Jurassic World (2015)</option>
+                        </select>
+                    </div>
+                </form>
+                <div class="d-grid gap-2 mb-4">
+                    <button class="btn btn-primary" type="search">Search</button>
+                </div>
+                <h2 class="h1 fw-bold mb-2">Bookmarked movies</h2>
+                <div class="card mb-4">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item my-3">
+                            <h3 class="fw-bolder">Avengers: Infinite War</h3>
+                            <button type="button" class="btn btn-danger mb-3">Remove</button>
+                        </li>
+                        <li class="list-group-item my-3">
+                            <h3 class="fw-bolder">The Avangers</h3>
+                            <button type="button" class="btn btn-danger mb-3">Remove</button>
+                        </li>
+                        <li class="list-group-item my-3">
+                            <h3 class="fw-bolder">12 Years a Slave</h3>
+                            <button type="button" class="btn btn-danger">Remove</button>
+                        </li>
+                    </ul>
+                  </div>
+        
+            </div><!--End of left-->
+
+            <!--RIGHT SECTION-->
+            <div class="right col-8">
+                <h3 class="h3 fw-bolder">Search results: 39</h3>
+                <div class="alert alert-primary" role="alert">
+                    Use the form on the left to search for a movie
+                </div>
+
+
+                <div class="card-wrapper d-flex flex-wrap justify-content-between" id="cardWrapper">
+                    
+                </div>
+
+                
+                <nav aria-label="...">
+                    <ul class="pagination pagination-lg mt-5 d-flex justify-content-center">
+                      <li class="page-item active" aria-current="page">
+                        <span class="page-link">1</span>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    </ul>
+                  </nav>
+            </div><!--End of right-->
+        </div><!--End of wrapper-->
+    </div><!--End of container-->
+
+    <script src="./js/main.js"></script>
+     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
